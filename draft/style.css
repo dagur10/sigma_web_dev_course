@@ -1,0 +1,22 @@
+/* element  */
+main{
+    background-color: red;
+    color: yellow;
+}
+/* class */
+.class{
+    background-color: aquamarine;
+}
+/* id */
+#id{
+    background-color: chocolate;
+}
+/* child */
+div > p{
+    background-color: blueviolet;
+}
+
+/* decendent */
+/* div p{
+    background-color: blanchedalmond;
+} */
