@@ -6,18 +6,45 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
      <style>
-        .box{
-            overflow: auto auto;
-            width: 100vw;
-            height: 15vh;
-            border: 2px solid black;
-            background-color: aqua;
+        :root{
+            --bg1:blue;
+            --bg2:rgb(110, 110, 240);
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav ul{
+            list-style-type: none;
+            display: flex;
+            background-color:var(--bg1);
+        }
+        .nav ul li{
+            padding: 5px;
+        }
+        .content{
+            --bgcolor:blue;
+            background-color:var(--bg2);
+        }
+        @media only screen and (min-width:455px)
+        {
+            body{
+                background-color:red;
+            }
         }
      </style>
+     
 </head>
 <body>
-    <div class="box">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae voluptas molestias, ratione minima ipsum delectus itaque illum numquam accusantium, ipsa aperiam officia porro non a. Earum fuga atque laboriosam impedit quia iusto unde veniam nulla iste animi cumque excepturi quos consequuntur voluptas id architecto, amet, harum non ullam ex ad! Quia distinctio nemo laborum assumenda.
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quas, voluptas ut odio commodi omnis autem quisquam fugiat nesciunt veniam minima sed. Quibusdam illo optio ullam nisi! Neque totam eos molestiae atque. Veniam velit minus nam officiis voluptatum. Laudantium nam, reprehenderit magnam asperiores perferendis sequi?
     </div>
 </body>
 </html>
