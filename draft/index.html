@@ -6,45 +6,30 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
      <style>
-        :root{
-            --bg1:blue;
-            --bg2:rgb(110, 110, 240);
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
         }
-        *{
-            margin: 0px;
-            padding: 0px;
+        .card{
+            margin: 1px;
+            border: 2px solid red;
         }
-        .nav ul{
-            list-style-type: none;
-            display: flex;
-            background-color:var(--bg1);
+        img{
+            float: left;
         }
-        .nav ul li{
-            padding: 5px;
-        }
-        .content{
-            --bgcolor:blue;
-            background-color:var(--bg2);
-        }
-        @media only screen and (min-width:455px)
-        {
-            body{
-                background-color:red;
-            }
+        div:nth-child(3){
+            clear: left;
         }
      </style>
      
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+    <div class="cards">
+        <img src="image.jpg" alt="" width="230px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, distinctio?</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perspiciatis delectus quis impedit itaque dolore, atque voluptatibus omnis, tempore libero excepturi doloribus! Atque dolores earum vitae obcaecati possimus voluptate officiis magni libero nemo, aliquid accusantium similique veniam tempora dolore ab ut quisquam totam! Iste, reprehenderit.</div>
+        <div class="card">card3</div>
     </div>
-    <div class="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quas, voluptas ut odio commodi omnis autem quisquam fugiat nesciunt veniam minima sed. Quibusdam illo optio ullam nisi! Neque totam eos molestiae atque. Veniam velit minus nam officiis voluptatum. Laudantium nam, reprehenderit magnam asperiores perferendis sequi?
-    </div>
+    
 </body>
 </html>
