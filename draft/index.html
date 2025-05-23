@@ -6,30 +6,67 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
      <style>
-        .cards{
+        /* *{
+            margin: 0px;
+            padding: 0px;
+        } */
+        
+        nav{
+            height: 30px;
+            position:sticky;
+            top: 0px;
+            background-color: aqua;
+        }
+        .boxes{
+            margin: 5px;
             border: 2px solid black;
-            display: flow-root;
+            height: 500px;
+            background-color:bisque;
+            text-align: center;
         }
-        .card{
-            margin: 1px;
-            border: 2px solid red;
+        .boxes .box{
+            display: inline-block;
+            border: 2px solid black;
+            height: 100px;
+            width: 500px;
+            background-color: aquamarine;
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
-        img{
-            float: left;
+        .sigma{
+
+            color: white;
+            border: 2px solid rgb(244, 244, 244);
+            border-radius: 30px;
+            height: 100px;
+            width: 350px;
+            margin: 10px 0;
+            justify-self: center;
+            display: flex;
+            justify-content: center;
         }
-        div:nth-child(3){
-            clear: left;
+        .footer{
+            border: 2px solid black;
+        }
+        main{
+            background-color: black;
+            padding-bottom: 10px;
         }
      </style>
      
 </head>
 <body>
-    <div class="cards">
-        <img src="image.jpg" alt="" width="230px">
-        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, distinctio?</div>
-        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perspiciatis delectus quis impedit itaque dolore, atque voluptatibus omnis, tempore libero excepturi doloribus! Atque dolores earum vitae obcaecati possimus voluptate officiis magni libero nemo, aliquid accusantium similique veniam tempora dolore ab ut quisquam totam! Iste, reprehenderit.</div>
-        <div class="card">card3</div>
-    </div>
+        <nav>This is nav</nav>
+        <main>
+            <div class="boxes">
+            <span class="box">Box1</span>
+            <span class="box">Box2</span>
+            </div>
+            <div class="sigma">Sigma Web Dev</div>
+        </main>
+        
+        <footer class="footer">Footer</footer>
     
 </body>
 </html>
