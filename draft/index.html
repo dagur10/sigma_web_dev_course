@@ -4,50 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-     <style>
-        .container{
-            width: 80vw;
-            height: 60vh;
-            border: 1px solid black;
-            position: relative;
-        }
-        .box{
-            border: 1px solid black;
-            height: 40px;
-            width:40px;
-            border-radius: 20px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background-color:blue;
-            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-            animation:annix 7s linear infinite
-                    ,anniy 0.5s ease-out infinite alternate;
-        }
-        @keyframes annix {
-            from{
-                left: 0;
-            }
-            to{
-                left: 100%;
-            }
-        }
-        @keyframes anniy {
-            from{
-                bottom: 0;
-            }
-            to{
-                bottom: 20%;
-            }
-            
-        }
-     </style>
-     
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="box"></div>
+    <div class="box">
+        This is a box.
     </div>
 </body>
 </html>
