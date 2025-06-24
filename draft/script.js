@@ -1,32 +1,7 @@
-function adj()
-{
-    let a="Crazy";
-    let b="Amazing";
-    let c="Fire";
-    let d=Math.trunc(Math.random()*10)%3;
-    if(d==0){return a;}
-    else if(d==1){return b;}
-    else {return c;}
-
+let n=prompt("enter no:");
+let arr=[];
+for(let i=1;i<=n;i++){arr.push(i);}
+const mul=(a,b)=>{
+    return a*b;
 }
-function sn()
-{
-    let a="Engine";
-    let b="Foods";
-    let c="Garments";
-    let d=Math.trunc(Math.random()*10)%3;
-    if(d==0){return a;}
-    else if(d==1){return b;}
-    else {return c;}
-}
-function aw()
-{
-    let a="Bros";
-    let b="Limited";
-    let c="Hub";
-    let d=Math.trunc(Math.random()*10)%3;
-    if(d==0){return a;}
-    else if(d==1){return b;}
-    else {return c;}
-}
-console.log(adj()+sn()+aw());
+console.log(arr.reduce(mul));
